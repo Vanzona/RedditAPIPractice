@@ -7,8 +7,8 @@ import requests.auth
 client_auth = requests.auth.HTTPBasicAuth(CLIENT_ID, CLIENT_SECRET)
 data = {
     'grant_type': 'password',
-    'username': 'chunkylver99',
-    'password': 'MonkeyPrimus123$'
+    'username': '<USERNAME>',
+    'password': '<PASSSWORD HERE>'
 }
 
 headers = {'User-Agent': 'PEEP/0.0.1'}
