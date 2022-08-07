@@ -1,0 +1,39 @@
+import os
+import sys
+
+def getLogin():
+    osType = #Detect the OS
+    username = ""
+    password = ""
+    if osType == "windows":
+        loginTuple = windowsLogin()
+        username = loginTuple(0)
+        password = loginTuple(1)
+
+    elif osType == "macOS":
+        loginTuple = macOSLogin()
+        username = loginTuple(0)
+        password = loginTuple(1)
+    
+def windowsLogin():
+    sysName = os.environ.get('USERNAME')
+    redditLogin = user_dict.get(sysName)
+
+def macOSLogin():
+    sysName = os.environ.get('USER')
+    redditLogin = user_dict.get(sysName)
+
+user_dict = {   "williambaird":("cyberwiz25","Cubby0619*"),
+                "chunk":("chunkylver99","MonkeyPrimus123$")
+}
+
+CLIENT_ID = 'iKuKdB4VgV4WGbV3D7ViKQ'
+CLIENT_SECRET = 'kWSU5TImlNcui2pPx9zqIwUkQqAVyA'
+
+userIan = "chunkylver99"
+passIan = "MonkeyPrimus123$"
+
+userWilliam = "cyberwiz25"
+passWilliam = "Cubby0619*"
+
+print("\n" + os.environ.get('USER') + "\n")
