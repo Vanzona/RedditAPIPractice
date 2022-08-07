@@ -1,5 +1,5 @@
-CLIENT_ID = 'UWaCDLkHhE6t0qQF7B9JJQ'
-CLIENT_SECRET = 'jEm98gbmIlA8aYNXI5EULdR_eWlKSg'
+CLIENT_ID = 'iKuKdB4VgV4WGbV3D7ViKQ'
+CLIENT_SECRET = 'kWSU5TImlNcui2pPx9zqIwUkQqAVyA'
 import pandas
 import requests.auth
 from openpyxl import load_workbook
@@ -7,8 +7,8 @@ from openpyxl import load_workbook
 client_auth = requests.auth.HTTPBasicAuth(CLIENT_ID, CLIENT_SECRET)
 data = {
     'grant_type': 'password',
-    'username': '<USERNAME>',
-    'password': '<PASSSWORD HERE>'
+    'username': 'chunkylver99',
+    'password': 'MonkeyPrimus123$'
 }
 
 headers = {'User-Agent': 'PEEP/0.0.1'}
@@ -45,9 +45,10 @@ df = pandas.DataFrame(posts)
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pandas.ExcelWriter('C:\\Users\\chunk\\Documents\\Book6.xlsx', engine='openpyxl')
 # Convert the dataframe to an XlsxWriter Excel object.
-df.to_excel(writer, index= False, columns= 'A1', sheet_name='Sheet1')
+df.to_excel(writer, index= False, sheet_name='Sheet1')
 
 
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
+
