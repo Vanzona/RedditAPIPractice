@@ -1,7 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 CLIENT_ID = 'UWaCDLkHhE6t0qQF7B9JJQ'
 CLIENT_SECRET = 'jEm98gbmIlA8aYNXI5EULdR_eWlKSg'
 import pandas
